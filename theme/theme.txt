@@ -1,0 +1,54 @@
+desktop-color: "#300a24"
+desktop-image: "bootmenu.png"
+
+title-text: "Libreboot 25.06 Luminous Lemon (GRUB menu): https://libreboot.org/"
+title-font: "DejaVu Sans Mono Regular 16"
+title-color: "#aaaaaa"
+
+terminal-font: "DejaVu Sans Mono Regular 16"
+
++ boot_menu {
+    left = 1%
+    top = 10%
+    width = 97%
+    height = 60%
+    item_font = "DejaVu Sans Mono Regular 16"
+    selected_item_font = "DejaVu Sans Mono Regular 16"
+    item_color = "#cccccc"
+    selected_item_color = "#000000"
+    selected_item_pixmap_style = "select_*.png"
+    item_height = 16
+    item_padding = 0
+    item_spacing = 0
+    icon_width = 0
+    icon_height = 0
+    scrollbar = false
+}
+
++ label {
+    left = 10%
+    top = 100%-110
+    width = 80%
+    color = "#cccccc"
+    font = "DejaVu Sans Mono Regular 16"
+    text = "Use the arrow keys to select which entry is highlighted."
+}
+
++ label {
+    left = 10%
+    top = 100%-90
+    width = 80%
+    color = "#cccccc"
+    font = "DejaVu Sans Mono Regular 16"
+    text = "Press enter to boot the selected OS, 'e` to edit the commands before booting or 'c` for a command-line."
+}
+
++ label {
+    id = "__timeout__"
+    left = 10%
+    top = 100%-50
+    width = 80%
+    color = "#cccccc"
+    font = "DejaVu Sans Mono Regular 16"
+    text = "The highlighted entry will be executed automatically in %d s."
+}

@@ -1,0 +1,4 @@
+embed.cfg
+grub.cfg
+esp/
+OVMF_VARS.fd
